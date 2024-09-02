@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Space+Grotesk:wght@300..700&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --brand-color: #e07b67;
+
+    --dark-10: #121214;
+    --dark-20: #17171a;
+    --dark-30: #202024;
+    --dark-40: #252529;
+    --gray: #afabb6;
+    --white: #ffffff;
+}
+
+body {
+    background-color: var(--dark-10);
+    font-family: "Inter", sans-serif;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Space Grotesk", sans-serif;
+}
+
+
+.container-header{
+    background-color: var(--dark-20);
+    width: 100%;
+    padding: 5%;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 30px;
+
+}
+
+.container-header h1{
+    color: var(--white);
+    font-size: 2.5em;
+}
+.container-header h1 span{
+    color: var(--brand-color);
+}
+
+.content-pesquisa{
+    width: 100%;
+
+}
+
+#id-barra-pesquisa{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--gray);
+    background-color: var(--dark-40);
+    color: var(--white);
+    padding: 3% 5%;
+    font-size: 1.5em;
+    outline: none;
+}
+
+#not-found{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+/*Os posts começam aqui*/
+main{
+    height: auto;
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+    margin: 0 auto;
+    background-color: var(--dark-10);
+    width: 100%;
+}
+
+.container-section-post{
+    display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 40px;
+    width: 90%;
+    height: auto;
+    color: var(--white);
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+.post-artigo{
+    display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    border: solid 1px var(--gray);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 5px 0;
+    background-color: var(--dark-20);
+}
+
+.post-artigo-active{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: solid 1px var(--brand-color);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 5px 0;
+    background-color: var(--dark-20);
+
+}
+
+.data-like{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.data-post{
+    color: var(--brand-color);
+    font-size: 0.8em;
+}
+
+.heart-button{
+    transition: 0.5s;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background-image: url('/image/icon-heart.svg');
+    background-repeat: no-repeat;
+
+}
+
+.heart-buttonfull{
+    transition: 0.5s;
+    background-image: url('/image/icon-heart-full.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+
+
+.post-artigo h1{
+    font-size: 1.7em;
+    
+}
+
+.post-artigo p{
+    color: var(--gray);
+    font-size: 1em;
+}
